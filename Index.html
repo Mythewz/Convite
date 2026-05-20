@@ -28,16 +28,19 @@
             font-family: Forum;
             font-size: clamp(1rem, 5vw, 3rem);
         }
-        div{
-            border-radius: 10px;
+        #confirm {
+            border-radius: 35px;
             background-image: url(backgima.jpg);
             background-size: 100%;
-            padding: 4rem;
+            background-repeat: no-repeat;
+            
+            padding: 2rem;
 
             margin: 1rem;
             
             
         }
+
     </style>
 
     <script>
@@ -45,7 +48,7 @@
     </script>
 </head>
 <body>
-    <div>
+    <div id="confirm">
     <h1 class="Centro">Confirmação de presença</h1>
     <br>
     <label for="" class="info">Nome completo</label>
@@ -56,7 +59,18 @@
     <br> <br>
     <label for="" class="info">Email</label><br>
     <input type="email" class="info" placeholder="...@gmail.com">
-
+    <br> <br>
+    <label for="">Você irá comparecer ao evento ?</label> <br>
+    <form action="">
+    <input type="radio" value="Sim" name="comparecer"><label for="Sim">Sim</label>
+    <input type="radio" value="não" name="comparecer"><label for="não">Não</label>
+    </form>
+    </div>
+    
+    <div style="background-color: aliceblue; margin: 1rem; border-radius: 25px; padding: 1rem;">
+        <label for="" class="info">Quantidade de adultos, incluindo Você</label><input type="number" min="0" max="8">
+        <br>
+        <label for="" class="info">Quantidade de crianças, (Acima de 3 anos)</label><br><input type="number" style="font-size: 1rem;">
     </div>
 </body>
 </html>
